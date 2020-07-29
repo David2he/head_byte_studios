@@ -1,32 +1,3 @@
-// const canvas = document.querySelector("canvas");
-// const ctx = canvas.getContext("2d");
-
-// canvas.width = window.innerWidth;
-// canvas.height = window.innerHeight;
-
-// draw_canvas=()=>{
-// ctx.fillStyle = "white";
-// ctx.beginPath();
-// ctx.moveTo(150, 100);
-// ctx.lineTo(200, 150);
-// ctx.lineTo(200, 200);
-// ctx.lineTo(150, 250);
-// ctx.lineTo(100, 250);
-// ctx.lineTo(50, 200);
-// ctx.lineTo(50, 150);
-// ctx.lineTo(100, 100);
-// ctx.closePath();
-// ctx.fill();
-// }
-// draw_canvas()
-
-
-// window.addEventListener("resize",()=>{
-//     canvas.width = window.innerWidth 
-//     canvas.height = window.innerHeight;
-//     draw_canvas();
-//   })
-
 let $link_center = document.querySelector('.svg_center_container_link')
 // let test_var = "--scale_hexa_w";
 // // $link_center.addEventListener('click',()=>{
@@ -40,24 +11,46 @@ let $link_center = document.querySelector('.svg_center_container_link')
 //     document.documentElement.style.setProperty(test_var, '8')
 //     console.log( document.documentElement.style.getPropertyValue(test_var));
 // })
-let i  = window.innerWidth *0.0002
-let i2  = window.innerHeight * 0.0004
 
 
-let $svg = document.querySelector('.testouille')
+// let i  = window.innerWidth *0.000274 - window.innerHeight * 0.000309
+// let i2  = window.innerHeight * 0.000849 - window.innerWidth * 0.000274
 
-$link_center.addEventListener('click',()=>{
-    $svg.style.transform =   `scale(${i}, ${i2})`;
+// let i  = window.innerWidth *0.000142
+// let i2  = window.innerHeight * 0.000309
 
-    }
-)
-
-window.addEventListener('resize', ()=>{
-    console.log(window.innerWidth)
-    console.log(window.innerHeight)
-    // i += 0.1
-    // i2 += 0.1
-    $svg.style.transform =   `scale(${i}, ${i2})`;
-})
+// // console.log(i)
+// // console.log(i2)
 
 
+// let $svg = document.querySelector('.testouille')
+// // $svg.style.transform =   `scale(${i}, ${i2})`;
+
+// // $link_center.addEventListener('click',()=>{
+// //     $svg.style.transform =   `scale(${i}, ${i2})`;
+
+// //     }
+// // )
+
+
+// // window.addEventListener('resize', ()=>{
+// //     console.log(window.innerWidth)
+// //     console.log(window.innerHeight)
+// //     if(window.innerHeight > stock_height)
+// //     $svg.style.transform =   `scale(${i}, ${i2})`;
+// // }
+// // )
+// let x_scale = 1.2; 
+
+// let stock_width =window.innerWidth
+// let stock_height = window.innerHeight
+// console.log(stock_height)
+// window.addEventListener('resize', ()=>{
+//     if(window.innerHeight < stock_height){
+//         x_scale -=0.01
+//         console.log('pute')
+//         $svg.style.transform = `scaleX(${x_scale})`
+//     }
+//     stock_width =window.innerWidth
+//     stock_height = window.innerHeight 
+// })

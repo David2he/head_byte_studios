@@ -20,10 +20,9 @@ body {
   position: absolute; // to set the div as background
   width: 100vw;
   height: 100vh;
-  left: 0.37%; // random number because there is a probleme with svg file
-  top: 0.3%; // random number because there is a probleme with svg file
+
   svg {
-    // transform: scale(--scale_hexa_w, --scale_hexa_w);
+    transform: scale(1.9, 1.9);
   }
 }
 
@@ -90,25 +89,26 @@ body {
 .path {
   stroke-dasharray: 200;
   stroke-dashoffset: 800;
-  animation: dash 1s linear infinite ;
+  animation: dash 2s linear infinite ;
   
   transform-origin: center;
 }
 
-@keyframes dash {
-  to {
-    stroke-dashoffset: 0;
-  }
-}
+
 
 .svg_center_container{
   &:hover svg{
       transform: scale(1.5);
+      
     }
     &:hover .path{
       stroke: #52df81;
-      
+      animation: dash 1s linear infinite ;
     }
   }
 
-
+  @keyframes dash {
+    to {
+      stroke-dashoffset: 0;
+    }
+  }
