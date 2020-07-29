@@ -64,107 +64,92 @@ body {
 }
 
 .background_hexa {
-  z-index: 9;
+  z-index: 1;
   position: absolute;
   width: 100vw;
   height: 100vh;
+  left: 0.37%;
+  top: 0.3%;
 }
 .background_hexa svg {
   transform: scale(1.2, 1.6);
 }
 
-.start_container {
-  z-index: 9;
+.svg_center_container {
   width: 100vw;
   height: 100vh;
+  background-color: #303434;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
-  background-color: #303334;
 }
-.start_container .underline_behind_start {
-  z-index: 99;
-  width: 45vw;
+.svg_center_container .svg_center_container_link {
+  z-index: 2;
+  width: 22%;
+  height: 32%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.svg_center_container .svg_center_container_link svg {
+  position: absolute;
+  transition: 0.3s;
+}
+.svg_center_container .svg_center_container_link .orange_stroke_center {
+  z-index: 3;
+  width: 60%;
+}
+.svg_center_container .svg_center_container_link .hexa_center {
+  width: 100%;
+  transform: scale(1.2, 1.3);
+}
+.svg_center_container .svg_center_container_link p {
+  text-transform: uppercase;
+  font-size: 3vw;
+  color: #df8d52;
+  z-index: 4;
+}
+
+.underline_behind_start_container {
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.underline_behind_start_container .underline_behind_start {
+  width: 100vw;
   height: 2vh;
-  background-color: #303334;
-}
-.start_container .underline_behind_end {
-  z-index: 99;
-  width: 45vw;
-  height: 2vh;
-  background-color: #303334;
-}
-.start_container .center_test {
-  width: 1vw;
-  background-color: salmon;
-  height: 100vw;
+  z-index: 2;
+  background-color: #303434;
 }
 
 .test_hover {
-  will-change: fill;
-  transition: 0.4s ease-out;
+  transition: 0.1s ease-out;
 }
 .test_hover:hover {
   fill: orange;
-}
-
-.test_svg_center {
-  position: absolute;
-  width: 100vw;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.test_svg_center:hover .path {
-  stroke: red;
-}
-.test_svg_center .test_svg_center_under_container {
-  z-index: 9999;
-  width: 25%;
-  height: 40%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.test_svg_center .test_svg_center_under_container a {
-  position: absolute;
-  text-align: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 0%;
-  height: 0;
-}
-.test_svg_center .test_svg_center_under_container a p {
-  text-transform: uppercase;
-  font-size: 3vw;
-  color: #DF8D52;
-  z-index: 99999;
-  position: absolute;
-}
-.test_svg_center .test_svg_center_under_container .orange_in_start_container {
-  position: absolute;
-  width: 22%;
-  height: 40%;
-  display: flex;
-  justify-content: center;
-}
-.test_svg_center .test_svg_center_under_container .orange_in_start_container .orange_in_start {
-  width: 90%;
 }
 
 .path {
   stroke-dasharray: 200;
   stroke-dashoffset: 800;
   animation: dash 1s linear infinite;
-  transition: 0.3s;
+  transform-origin: center;
 }
 
 @keyframes dash {
   to {
     stroke-dashoffset: 0;
   }
+}
+.svg_center_container:hover svg {
+  transform: scale(1.5);
+}
+.svg_center_container:hover .path {
+  stroke: #52df81;
 }
 
 /*# sourceMappingURL=main.css.map */
