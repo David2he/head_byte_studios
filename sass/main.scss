@@ -1,5 +1,11 @@
 @import "./reset.scss";
-$width_of_cards: 100vw;
+@import "./responsive.scss";
+:root {
+  --scale_hexa_w:1.2;
+  --scale_hexa_h:1.6;
+}
+$scale_hexa_w:1.2;
+$scale_hexa_h:1.6;
 @font-face {
   font-family: "Coluna";
   src: url("../fonts/Coluna.otf") format("otf");
@@ -17,7 +23,7 @@ body {
   left: 0.37%; // random number because there is a probleme with svg file
   top: 0.3%; // random number because there is a probleme with svg file
   svg {
-    transform: scale(1.2, 1.6);
+    // transform: scale(--scale_hexa_w, --scale_hexa_w);
   }
 }
 
