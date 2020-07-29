@@ -14,7 +14,7 @@ body{
     position: absolute;
     width: 100vw;
     height: 100vh;
-    left: 0.37%;
+    // left: 0.37%;
     svg{
         transform: scale(1.2, 1.6);
     }
@@ -60,12 +60,14 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+    &:hover .path{
+        stroke: red;
+    }
   
     .test_svg_center_under_container{
         z-index: 9999;
         width: 25%;
         height: 40%;
-        // background-color: #222222;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -105,8 +107,9 @@ body{
 
 .path {
     stroke-dasharray: 200;
-    stroke-dashoffset: 500;
-    animation: dash 1s linear infinite alternate;;
+    stroke-dashoffset: 800;
+    animation: dash 1s linear infinite ;
+    transition: 0.3s;
   }
   
   @keyframes dash {
