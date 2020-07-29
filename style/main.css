@@ -1,0 +1,167 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+@font-face {
+  font-family: "Coluna";
+  src: url("../fonts/Coluna.otf") format("otf");
+}
+body {
+  overflow: hidden;
+  font-family: Coluna;
+}
+
+.background_hexa {
+  z-index: 9;
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  left: 0.37%;
+}
+.background_hexa svg {
+  transform: scale(1.2, 1.6);
+}
+
+.start_container {
+  z-index: 9;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #303334;
+}
+.start_container .underline_behind_start {
+  z-index: 99;
+  width: 45vw;
+  height: 2vh;
+  background-color: #303334;
+}
+.start_container .underline_behind_end {
+  z-index: 99;
+  width: 45vw;
+  height: 2vh;
+  background-color: #303334;
+}
+.start_container .center_test {
+  width: 1vw;
+  background-color: salmon;
+  height: 100vw;
+}
+
+.test_hover {
+  will-change: fill;
+  transition: 0.4s ease-out;
+}
+.test_hover:hover {
+  fill: orange;
+}
+
+.test_svg_center {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.test_svg_center .test_svg_center_under_container {
+  z-index: 9999;
+  width: 25%;
+  height: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.test_svg_center .test_svg_center_under_container a {
+  position: absolute;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 0%;
+  height: 0;
+}
+.test_svg_center .test_svg_center_under_container a p {
+  text-transform: uppercase;
+  font-size: 3vw;
+  color: #DF8D52;
+  z-index: 99999;
+  position: absolute;
+}
+.test_svg_center .test_svg_center_under_container .orange_in_start_container {
+  position: absolute;
+  width: 22%;
+  height: 40%;
+  display: flex;
+  justify-content: center;
+}
+.test_svg_center .test_svg_center_under_container .orange_in_start_container .orange_in_start {
+  width: 90%;
+}
+
+.path {
+  stroke-dasharray: 200;
+  stroke-dashoffset: 500;
+  animation: dash 1s linear infinite alternate;
+}
+
+@keyframes dash {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,116 @@
+@import './reset.scss';
+
+@font-face {
+    font-family: "Coluna";
+    src: url("../fonts/Coluna.otf") format("otf")
+   }
+
+body{
+    overflow: hidden;
+    font-family: Coluna;
+}
+.background_hexa{
+    z-index: 9;
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    left: 0.37%;
+    svg{
+        transform: scale(1.2, 1.6);
+    }
+}
+.start_container{
+    z-index: 9;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #303334;
+    .underline_behind_start{
+        z-index: 99;
+        width: 45vw;
+        height: 2vh;
+        background-color: #303334;
+    }
+    .underline_behind_end{
+        z-index: 99;
+        width: 45vw;
+        height: 2vh;
+        background-color: #303334;
+    }
+    .center_test{
+        width: 1vw;
+        background-color: salmon;
+        height: 100vw;
+    }
+}
+.test_hover{
+    will-change: fill;
+    transition: 0.4s ease-out ;
+    &:hover{
+        fill: orange;
+    }
+}
+
+.test_svg_center{
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+    .test_svg_center_under_container{
+        z-index: 9999;
+        width: 25%;
+        height: 40%;
+        // background-color: #222222;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        a{
+            position: absolute;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 0%;
+            height: 0;
+            p{
+                text-transform: uppercase;
+                font-size: 3vw;
+                color: #DF8D52;
+                z-index: 99999;
+                position: absolute;
+                // background-color: yellow;
+            }
+        }
+       
+        .orange_in_start_container{
+            position: absolute;
+            width: 22%;
+            height: 40%;
+            display: flex;
+            justify-content: center;
+
+            .orange_in_start{
+                width: 90%;
+            }
+        }
+        
+    }
+}
+
+
+.path {
+    stroke-dasharray: 200;
+    stroke-dashoffset: 500;
+    animation: dash 1s linear infinite alternate;;
+  }
+  
+  @keyframes dash {
+    to {
+      stroke-dashoffset: 0;
+    }
+  }
