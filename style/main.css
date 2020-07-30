@@ -1,3 +1,37 @@
+body {
+  overflow-x: hidden;
+}
+
+.transition-fade {
+  opacity: 1;
+  transition: 500ms;
+  transform: translateX(0);
+  transform-origin: left;
+}
+
+html.is-animating .transition-fade {
+  opacity: 1;
+  transform: translateX(100%);
+}
+
+html.is-leaving .transition-fade {
+  opacity: 0;
+  transform: translateX(0);
+}
+
+.transition-swipe {
+  transition: 500ms;
+  transform: translateY(0);
+}
+
+html.is-animating .transition-swipe {
+  transform: translateY(100px);
+}
+
+h1 {
+  position: absolute;
+}
+
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -68,11 +102,21 @@ body {
   position: absolute;
   width: 100vw;
   height: 100vh;
-  left: 0.37%;
-  top: 0.3%;
 }
 .background_hexa svg {
-  transform: scale(1.2, 1.6);
+  transform: scale(1.9, 1.9);
+}
+
+.logo_homepage {
+  z-index: 3;
+  position: absolute;
+  top: 3%;
+  left: 2%;
+  height: 10vh;
+  width: 7vw;
+}
+.logo_homepage img {
+  width: 100%;
 }
 
 .svg_center_container {
@@ -85,8 +129,8 @@ body {
 }
 .svg_center_container .svg_center_container_link {
   z-index: 2;
-  width: 22%;
-  height: 32%;
+  width: 20%;
+  height: 30%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -107,8 +151,15 @@ body {
 .svg_center_container .svg_center_container_link p {
   text-transform: uppercase;
   font-size: 3vw;
-  color: #df8d52;
   z-index: 4;
+  overflow: hidden;
+  background: linear-gradient(to right, #df8d52 50%, white 50%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: 200% 100%;
+  background-position: 100%;
+  transition: background-position 275ms ease;
+  text-decoration: none;
 }
 
 .underline_behind_start_container {
@@ -121,7 +172,7 @@ body {
 }
 .underline_behind_start_container .underline_behind_start {
   width: 100vw;
-  height: 2vh;
+  height: 1vh;
   z-index: 2;
   background-color: #303434;
 }
@@ -130,14 +181,26 @@ body {
   transition: 0.1s ease-out;
 }
 .test_hover:hover {
-  fill: orange;
+  fill: #df8d52;
 }
 
 .path {
   stroke-dasharray: 200;
   stroke-dashoffset: 800;
-  animation: dash 1s linear infinite;
+  animation: dash 2s linear infinite;
   transform-origin: center;
+}
+
+.svg_center_container:hover svg {
+  transform: scale(1.5);
+}
+.svg_center_container:hover .path {
+  stroke: #df8d52;
+  stroke-width: 8;
+  animation: dash 0.8s linear infinite reverse;
+}
+.svg_center_container:hover .play_center {
+  background-position: 0 100%;
 }
 
 @keyframes dash {
@@ -145,11 +208,32 @@ body {
     stroke-dashoffset: 0;
   }
 }
-.svg_center_container:hover svg {
-  transform: scale(1.5);
+.orange_test {
+  animation: bg_shape_animation 1s linear;
 }
-.svg_center_container:hover .path {
-  stroke: #52df81;
+
+@keyframes bg_shape_animation {
+  50% {
+    fill: #df8d52;
+  }
+  100% {
+    fill: #faf8f5;
+  }
+}
+.center_element {
+  width: 100vw;
+  height: 100vh;
+  background-color: blue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.center_element p {
+  font-size: 5rem;
+  transition: 0.5s;
+}
+.center_element p:hover {
+  color: white;
 }
 
 /*# sourceMappingURL=main.css.map */
