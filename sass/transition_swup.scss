@@ -1,32 +1,32 @@
-body {
-  overflow-x: hidden;
-}
-
-.transition-fade {
-  opacity: 1;
-  transition: 500ms;
-  transform: translateX(0);
-  transform-origin: left;
-}
-
-html.is-animating .transition-fade {
-  opacity: 1;
-  transform: translateX(100%);
-}
-
-html.is-leaving .transition-fade {
-  opacity: 0;
-  transform: translateX(0);
-}
-
-.transition-swipe {
-  transition: 500ms;
-  transform: translateY(0);
-}
-
-html.is-animating .transition-swipe {
-  transform: translateY(100px);
-}
-h1{
-  position: absolute;
-}
+// body {
+//     overflow-x: hidden;
+//   }
+  
+  // .transition-fade {
+  //   opacity: 1;
+  //   transition: 500ms;
+  //   transform: translateY(0);
+  //   transform-origin: bottom;
+  // }
+  
+//   html.is-animating .transition-fade {
+//     opacity: 1;
+//     transform: translateY(100vh);
+//   }
+  
+//   html.is-leaving .transition-fade {
+//     opacity: 0;
+//     transform: translateY(100vh);
+//   }
+  
+//   .transition-swipe {
+//     transition: 500ms;
+//     // transform: translateY(150vw);
+//   }
+  
+//   html.is-animating .transition-swipe {
+//     transform: translateY(10vh);
+//   }
+//   h1{
+//     position: absolute;
+//   }

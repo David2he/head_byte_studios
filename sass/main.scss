@@ -1,5 +1,6 @@
 @import './transition_swup.scss';
 @import './reset.scss';
+// @import './second.scss';
 
 @font-face {
     font-family: "Coluna";
@@ -94,7 +95,7 @@
   }
   
   .test_hover {
-    transition: 0.1s ease-out;
+    transition: 0.2s ease-out;
     &:hover {
       fill: #df8d52;
     }
@@ -104,9 +105,9 @@
   .path {
     stroke-dasharray: 200;
     stroke-dashoffset: 800;
-    animation: dash 2s linear infinite ;
-    
+    animation: dash 2.5s linear infinite ;
     transform-origin: center;
+    transition: 4s;
   }
   
   
@@ -118,8 +119,8 @@
       }
       &:hover .path{
         stroke: #df8d52;
-        stroke-width: 8;
-        animation: dash 0.8s linear infinite reverse ;
+        stroke-width: 2;
+        animation: dash 1.6s linear infinite reverse ;
       }
       &:hover .play_center{
           background-position: 0 100%;
@@ -134,7 +135,7 @@
   
     .orange_test{
      
-      animation: bg_shape_animation 1s linear;
+      animation: bg_shape_animation 2s ease-out;
       // transition: 0.2s;
     }
   @keyframes bg_shape_animation{
@@ -143,24 +144,59 @@
   }
   
   
+
+
   
 
-  //////// SECOND PAGE 
-
-
-
-  .center_element{
-      width: 100vw;
-      height: 100vh;
-      background-color: blue;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      p{
-          font-size: 5rem;
-          transition: 0.5s;
-          &:hover{
-              color: white;
-          }
-      }
+  .container_second_page{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #303334;
   }
+  .contenair_hexa_container {
+    // width: 40vw;
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .contenair_hexa {
+      .contenair_in {
+        position: relative;
+        margin: 1vh 0 2vw 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+        a{
+          z-index: 9;
+          position: absolute;
+          font-size: 2rem;
+          color:#df8d52;
+        }
+      }
+    }
+    .contenair_hexa_1 {
+      display: flex;
+      justify-content: flex-start;
+      flex-direction: column;
+    }
+    .contenair_hexa_2 {
+      display: flex;
+      justify-content: flex-start;
+      flex-direction: column;
+    }
+  }
+  
+  .test_air {
+    margin: 11vh 0 11vw 0;
+  }
+  canvas{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    border: solid 1px green;
+  }
+  
