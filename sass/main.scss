@@ -21,6 +21,9 @@
       transform: scale(1.9, 1.9);
     }
   }
+  .background_hexa{
+    overflow: hidden;
+  }
   
   .logo_homepage{
     z-index: 3;
@@ -134,9 +137,14 @@
     }
   
     .orange_test{
-     
-      animation: bg_shape_animation 2s ease-out;
+      transition: 1s ease;
+      fill: #df8d52;
+      // animation: bg_shape_animation 2s ease;
       // transition: 0.2s;
+    }
+    .orange_test_remove{
+      transition: 1s ease;
+      fill: #ffffff;
     }
   @keyframes bg_shape_animation{
     50%{ fill: #df8d52;}
@@ -171,6 +179,11 @@
         align-items: center;
         overflow: hidden;
         a{
+          height: 100%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width: 100%;
           z-index: 9;
           position: absolute;
           font-size: 2rem;
@@ -200,3 +213,31 @@
     border: solid 1px green;
   }
   
+  .path_animation_2{
+    stroke-dasharray: 200;
+      stroke-dashoffset: 800;
+      animation: dash_2 5s infinite alternate linear ;
+      transform-origin: center;
+      stroke-width: 5;
+      transition: 0.2s ease;
+  }
+  .contenair_in, a{
+    &:hover .path_animation_2{
+      stroke-width: 100;
+      fill: #df901a;
+    }
+    &:hover p{
+      color: rgb(255, 255, 255);
+    }
+  }
+ 
+ 
+  @keyframes dash_2 {
+    to {
+      stroke-dashoffset: 0;
+    }
+  }
+ 
+
+
+

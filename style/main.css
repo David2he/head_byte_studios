@@ -73,6 +73,10 @@ body {
   transform: scale(1.9, 1.9);
 }
 
+.background_hexa {
+  overflow: hidden;
+}
+
 .logo_homepage {
   z-index: 3;
   position: absolute;
@@ -176,7 +180,13 @@ body {
   }
 }
 .orange_test {
-  animation: bg_shape_animation 2s ease-out;
+  transition: 1s ease;
+  fill: #df8d52;
+}
+
+.orange_test_remove {
+  transition: 1s ease;
+  fill: #ffffff;
 }
 
 @keyframes bg_shape_animation {
@@ -211,6 +221,11 @@ body {
   overflow: hidden;
 }
 .contenair_hexa_container .contenair_hexa .contenair_in a {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
   z-index: 9;
   position: absolute;
   font-size: 2rem;
@@ -236,6 +251,29 @@ canvas {
   height: 100%;
   width: 100%;
   border: solid 1px green;
+}
+
+.path_animation_2 {
+  stroke-dasharray: 200;
+  stroke-dashoffset: 800;
+  animation: dash_2 5s infinite alternate linear;
+  transform-origin: center;
+  stroke-width: 5;
+  transition: 0.2s ease;
+}
+
+.contenair_in:hover .path_animation_2, a:hover .path_animation_2 {
+  stroke-width: 100;
+  fill: #df901a;
+}
+.contenair_in:hover p, a:hover p {
+  color: white;
+}
+
+@keyframes dash_2 {
+  to {
+    stroke-dashoffset: 0;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */
