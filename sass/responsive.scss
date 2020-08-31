@@ -1,0 +1,353 @@
+@media only screen and (max-width: 1075px) and (min-width: 650px) {
+  .logo_homepage{
+    width: 15vw;
+    height: 20vh;
+  }
+}
+
+@media only screen and (max-width: 650px) and (min-width: 300px) {
+  .logo_homepage{
+    width: 25vw;
+    height: 35vh;
+  }
+}
+
+@media only screen and (max-width: 830px) and (min-width: 446px) {
+    .svg_container {
+      width: 130vw;
+    }
+  }
+  
+  @media only screen and (max-width: 446px) and (min-width: 0px) {
+    .svg_container {
+      width: 180vw;
+    }
+  }
+  
+  @media only screen and (max-width: 1440px) and (min-width: 0px) {
+    .svg_center_container {
+      // background-color: silver;
+  
+      .svg_center_container_link {
+        p {
+          font-size: 8vw;
+        }
+        .orange_stroke_center {
+          width: 150%;
+          // z-index: 999999;
+        }
+      }
+    }
+  }
+@media only screen and (max-width: 1720px) and (min-width: 950px) {
+    .presentation_game{
+      width: 80vw;
+    }
+    .sticky_huge_container .sticky_container{
+      width: 18%;
+    }
+    .sticky_huge_container .sticky_container{
+      right: 07%;
+    }
+    .sticky_huge_container .sticky_container .sticky_menue ul li{
+      font-size: 2rem;
+    }
+  }
+
+
+  @media only screen and (max-width: 950px) and (min-width: 0px) {
+
+ 
+    .sticky_huge_container .sticky_container .sticky_menue{
+      overflow-x: hidden;
+      ul{
+        transform: translateX(20vw);
+        opacity: 0;
+      }
+    }
+    .sticky_huge_container .sticky_container {
+      overflow-x: hidden;
+      ul{
+        transform: translateX(20vw);
+        opacity: 0;
+      }
+      
+    }
+    .hamburgeur_menue_toggle{
+      transform: translateX(0);
+    }
+  }
+
+
+
+  // @media only screen and (max-width: 950px) and (min-width: 0px) {
+  //   .sticky_huge_container .sticky_container{
+  //     width: 18%;
+  //   }
+  //   .sticky_huge_container .sticky_container{
+  //     right: 07%;
+  //   }
+  //   .sticky_huge_container .sticky_container .sticky_menue ul li{
+  //     font-size: 1.5rem;
+  //   }
+  // }
+
+  // @media only screen and (max-width: 725px) and (min-width: 570px) {
+  //   .sticky_huge_container .sticky_container .sticky_menue ul li{
+  //     font-size: 1.2rem;
+  //   }
+  //   .sticky_huge_container .sticky_container .sticky_menue_animation ul .stick, .sticky_huge_container .sticky_container .sticky_menue_animation ul .stick:after{
+  //     width: 0.4vw;
+      
+  //   }
+
+  // }
+
+  // @media only screen and (max-width: 570px) and (min-width: 345px) {
+  //   .sticky_huge_container .sticky_container{
+  //     width: 25%;
+  //   }
+  //   .sticky_huge_container .sticky_container{
+  //     right: 05%;
+  //   }
+  //   .sticky_huge_container .sticky_container .sticky_menue ul li{
+  //     font-size: 1rem;
+  //   }
+  //   .sticky_huge_container .sticky_container .sticky_menue_animation ul .stick, .sticky_huge_container .sticky_container .sticky_menue_animation ul .stick:after{
+  //     width: 0.4vw;
+      
+  //   }
+  // }
+
+  // @media only screen and (max-width: 345px) and (min-width: 290px) {
+  //   .sticky_huge_container .sticky_container{
+  //     width: 30%;
+  //   }
+  //   .sticky_huge_container .sticky_container{
+  //     right: 02%;
+  //   }
+  //   .sticky_huge_container .sticky_container .sticky_menue ul li{
+  //     font-size: 1rem;
+  //   }
+  //   .sticky_huge_container .sticky_container .sticky_menue_animation ul .stick, .sticky_huge_container .sticky_container .sticky_menue_animation ul .stick:after{
+  //     width: 0.4vw;
+      
+  //   }
+  // }
+
+
+  // @media only screen and (max-width: 290px) and (min-width: 0px) {
+  //   .sticky_huge_container .sticky_container{
+  //     width: 40%;
+  //   }
+  //   .sticky_huge_container .sticky_container{
+  //     right: 02%;
+  //   }
+  //   .sticky_huge_container .sticky_container .sticky_menue ul li{
+  //     font-size: 0.9rem;
+  //   }
+  //   .sticky_huge_container .sticky_container .sticky_menue_animation ul .stick, .sticky_huge_container .sticky_container .sticky_menue_animation ul .stick:after{
+  //     width: 0.7vw;
+      
+  //   }
+  // }
+  
+  // @media only screen and (max-width: 1330px) and (min-width: 0px) {
+  //   .carousel .our_games_center .presentation_game{
+  //     width: 60%;
+  //     background-color: rgba(47, 142, 206, 0.664);
+  //   }
+  //   .carousel .our_games_center .presentation_game .text_about_our_game p{
+  //     font-size: 0.8rem;
+  //     line-height: 1.5rem;
+  //   }
+  // }
+  
+  // @media only screen and (max-width: 840px) and (min-width: 0px) {
+  //   .carousel .our_games_center .presentation_game{
+  //     width: 70%;
+  //     background-color: rgba(206, 52, 47, 0.562);
+  //   }
+  //   .carousel .our_games_center .presentation_game .text_about_our_game p{
+  //     font-size: 0.7rem;
+  //     line-height: 1.3rem;
+  //   }
+  // }
+  // @media only screen and (max-width: 840px) and (min-width: 0px) {
+  //   .carousel .our_games_center .presentation_game{
+  //     width: 70%;
+  //     height: 82vh;
+  //     background-color: rgba(206, 52, 47, 0.562);
+  //     .text_about_our_game {
+  //       height: 35%;
+  //       p{
+  //         font-size: 0.7rem;
+  //         line-height: 1.3rem;
+  //       }
+        
+  //     }
+  //   }
+  // }
+  @media only screen and (max-width: 1535px) and (min-width: 1350px) {
+    .carousel .our_games_center .presentation_game .text_about_our_game p{
+      margin: 0.5vh 0.5vh 0.5vh 0.5vh;
+    }
+  }
+
+  @media only screen and (max-width: 1350px) and (min-width: 0px) {
+    $width_game_container_presentation: 50vw;
+    $carousel_arrow: $width_game_container_presentation / 6.66666667;
+    .carousel .our_games_center .presentation_game .text_about_our_game p{
+      margin: 0.5vh 0.5vh 0.5vh 0.5vh;
+    }
+    .carousel .our_games_center .presentation_game{
+      width:  $width_game_container_presentation;
+    }
+    .carousel .carousel_change_slide_buttons_container{
+      width: $carousel_arrow;
+    }
+
+    .previous{
+      display: none; 
+      }
+      
+      .next{
+        display: none;
+        }
+        .flickity-page-dots .dot {
+          width: 15px;
+          height: 15px;
+        }
+    
+}
+
+@media only screen and (max-width: 1075px) and (min-width: 730px) {
+  $width_game_container_presentation: 60vw;
+  .carousel .our_games_center .presentation_game .title_game h2{
+    font-size: 2rem;
+  }
+  .carousel .carousel_change_slide_buttons_container{
+    display: none;
+  }
+  .carousel .our_games_center .presentation_game{
+    width: $width_game_container_presentation;
+    display: flex;
+    height: 80vh;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+  }
+}
+
+@media only screen and (max-width: 735px) and (min-width: 500px) {
+  $width_game_container_presentation: 100vw;
+  .carousel .our_games_center .presentation_game .title_game h2{
+    font-size: 2rem;
+  }
+  .carousel .carousel_change_slide_buttons_container{
+    display: none;
+  }
+  .carousel .our_games_center .presentation_game{
+    width: $width_game_container_presentation;
+    display: flex;
+    height: 80vh;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+  }
+  .carousel .our_games_center .presentation_game .text_about_our_game .video_show_games{
+    width: 95%;
+  }
+}
+
+@media only screen and (max-width: 500px) and (min-width: 0px) {
+  $width_game_container_presentation: 100vw;
+  .carousel .our_games_center .presentation_game .title_game h2{
+    font-size: 2rem;
+  }
+  .carousel .carousel_change_slide_buttons_container{
+    display: none;
+  }
+  .carousel .our_games_center .presentation_game{
+    width: $width_game_container_presentation;
+    display: flex;
+    height: 95vh;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+  }
+  .carousel .our_games_center .presentation_game .text_about_our_game .video_show_games{
+    width: 95%;
+  }
+  .carousel .our_games_center .presentation_game .text_about_our_game{
+    height: 30%;
+  }
+}
+ 
+
+
+
+/// START PAGE 
+
+@media only screen and (max-width: 1440px) and (min-width: 750px) {
+  .follow_the_read_section .follow_the_read_section_text h1{
+    font-size: 3rem;
+    // background-color: blueviolet;
+  }
+}
+
+@media only screen and (max-width: 1200px) and (min-width: 750px) {
+  .follow_the_read_section .follow_the_read_section_images img{
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 1000px) and (min-width: 0px) {
+  .follow_the_read_section .follow_the_read_section_scroll{
+    width: 23%;
+    height: 26%;
+  }
+}
+
+@media only screen and (max-width: 750px) and (min-width: 0px) {
+  .follow_the_read_section .follow_the_read_section_text h1{
+    font-size: 2rem;
+    // background-color: blueviolet;
+  }
+}
+
+@media only screen and (max-width: 750px) and (min-width: 0px) {
+  .follow_the_read_section .follow_the_read_section_images{
+    width: 85%;
+  }
+}
+
+@media only screen and (max-width: 1500px) and (min-width: 1000px) {
+  .text_presentation{
+    width: 28vw;
+  }
+}
+
+@media only screen and (max-width: 1000px) and (min-width: 710px) {
+  .text_presentation{
+    width: 40vw;
+  }
+}
+
+@media only screen and (max-width: 710px) and (min-width: 375px) {
+  .text_presentation{
+    width: 60vw;
+    left: 5%;
+  }
+}
+
+@media only screen and (max-width: 375px) and (min-width: 0px) {
+  .text_presentation{
+    width: 75vw;
+    left: 3%;
+  }
+  .text_presentation .about_us_list_container{
+    font-size: 1rem;
+  }
+}
+

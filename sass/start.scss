@@ -1,0 +1,338 @@
+.container_test_overflow {
+  overflow-x: hidden;
+  width: 100vw;
+}
+
+.logo_homepage {
+  z-index: 10;
+  position: fixed;
+  top: 3%;
+  left: 2%;
+  height: 10vh;
+  width: 7vw;
+  img {
+    width: 100%;
+  }
+}
+
+.svg_center_container {
+  width: 100vw;
+  height: 100vh;
+  background-color: rgb(48, 51, 52);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.2s;
+  z-index: 3;
+  .svg_center_container_link {
+    z-index: 4;
+    width: 20%;
+    height: 30.5%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    svg {
+      z-index: 5;
+      position: absolute;
+      transition: 0.3s;
+    }
+    .orange_stroke_center {
+      z-index: 7;
+      width: 60%;
+      // z-index: 999999;
+    }
+    .hexa_center {
+      width: 100%;
+      transform: scale(1.12, 1.28);
+      z-index: 6;
+
+      // background-color: seagreen;
+    }
+    p {
+      text-transform: uppercase;
+      font-size: 3vw;
+      z-index: 8;
+      overflow: hidden;
+      background: linear-gradient(to right, #ffffff 50%, rgb(0, 0, 0) 50%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-size: 200% 100%;
+      background-position: 100%;
+      transition: background-position 275ms ease;
+      text-decoration: none; // text decorations are clipped in WebKit browsers
+    }
+  }
+}
+.underline_behind_start_container {
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.2s;
+
+  .underline_behind_start {
+    width: 100vw;
+    height: 1vh;
+    z-index: 4;
+    background-color: #303434;
+  }
+}
+
+.test_hover {
+  transition: 0.2s ease-out;
+  &:hover {
+    fill: #df8d52;
+  }
+}
+
+.path {
+  stroke-dasharray: 200;
+  stroke-dashoffset: 800;
+  animation: dash 2.5s linear infinite;
+  transform-origin: center;
+  transition: 4s;
+}
+
+.svg_center_container {
+  &:hover svg {
+    transform: scale(1.5);
+  }
+  &:hover .path {
+    stroke: #df8d52;
+    stroke-width: 2;
+    animation: dash 1.6s linear infinite reverse;
+  }
+  &:hover .play_center {
+    background-position: 0 100%;
+  }
+}
+
+@keyframes dash {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+.orange_test {
+  transition: 1s ease;
+  fill: #f7ae7a;
+  // animation: bg_shape_animation 2s ease;
+  // transition: 0.2s;
+}
+.orange_test_remove {
+  transition: 1s ease;
+  fill: #ffffff;
+}
+@keyframes bg_shape_animation {
+  50% {
+    fill: #df8d52;
+  }
+  100% {
+    fill: #faf8f5;
+  }
+}
+
+.svg_content_bg {
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  overflow: hidden;
+  // background-color: rosybrown;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: center;
+}
+.svg_container_top {
+  top: 0%;
+  transition: 0.8s ease;
+  z-index: 1;
+  svg {
+    transform: scale(3.8);
+    // background-color: rgba(36, 184, 127, 0.315);
+  }
+}
+.svg_container_bot {
+  // transform: rotate(180deg);
+  z-index: 2;
+  transition: 0.8s ease;
+  top: 60%;
+
+  svg {
+    transform: scale(3.8);
+    // background-color: rgba(30, 126, 204, 0.466);
+  }
+}
+.svg_container {
+  position: absolute;
+  // background-color: rebeccapurple;
+  width: 100vw;
+  height: 50vh;
+  // overflow: hidden;
+}
+
+.test_middle {
+  // z-index: 9999;
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(65, 105, 225, 0.116);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  .h_center {
+    width: 49.5vw;
+    height: 1vh;
+    background-color: saddlebrown;
+  }
+  .v_center {
+    width: 0.5vw;
+    height: 100vh;
+    background-color: salmon;
+  }
+}
+
+.testmother {
+  z-index: 4;
+}
+
+.overflow_body {
+  overflow-y: scroll;
+}
+
+.go_up {
+  transform: translateY(200vh);
+  animation: go_up 0.9s ease;
+  // transform: translateX(-150vw);
+  // opacity: 0;
+  // z-index: 0;
+}
+.go_down {
+  transform: translateY(-200vh);
+  animation: go_down 0.9s ease;
+  // transform: translateX(-150vw);
+  // opacity: 0;
+  // z-index: 0;
+}
+
+@keyframes go_up {
+  0% {
+    transform: translateY(0vh);
+  }
+  // 50%{transform: translateY(20vh);}
+  // 75%{transform: translateY(75vh);}
+  90% {
+    transform: translateY(200);
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    z-index: 0;
+  }
+}
+
+@keyframes go_down {
+  0% {
+    transform: translateY(-0vh);
+  }
+  // 50%{transform: translateY(-20vh);}
+  // 75%{transform: translateY(-75vh);}
+  90% {
+    transform: translateY(-200);
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    z-index: 0;
+  }
+}
+
+.follow_the_read_section {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  // overflow: hidden;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  overflow: hidden;
+  // left: 45%;
+  opacity: 0;
+  // transform: translateY(-5vh);
+  transition: 1.2s;
+  background-color: rgb(48, 51, 52);
+  .follow_the_read_section_images {
+    width: 40vw;
+    height: 80vh;
+    // background-color: saddlebrown;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    img {
+      // background-color: rgb(23, 146, 184);
+      width: 70%;
+    }
+  }
+  .follow_the_read_section_text {
+    width: auto;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    // background-color: blueviolet;
+
+    h1 {
+      // width: 30vw;
+      color: #df8d52;
+      font-size: 4rem;
+      text-transform: uppercase;
+      letter-spacing: 1.5rem;
+      // background-color: blueviolet;
+    }
+  }
+  .follow_the_read_section_scroll {
+    height: 40vh;
+    width: 15vw;
+    // background-color: rebeccapurple;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .path_arrow{
+    opacity: 0;
+  }
+  .path_arrow_1{
+    animation: path_arrow_1_animation 1.2s ease infinite forwards;
+  }
+  .path_arrow_2{
+    animation: path_arrow_2_animation 1.2s ease infinite forwards ;
+  }
+  .path_arrow_3{
+    animation: path_arrow_3_animation 1.2s infinite forwards;
+  }
+  
+}
+.opacity_follow {
+  opacity: 1;
+  // transform: translateY(2vh);
+}
+
+@keyframes path_arrow_1_animation{
+  // 50%{opacity: 0;}
+  33%{opacity: 1;}
+}
+@keyframes path_arrow_2_animation{
+  // 50%{opacity: 0;}
+  66%{opacity: 1;}
+}
+@keyframes path_arrow_3_animation{
+  // 50%{opacity: 0;}
+  99%{opacity: 1;}
+}

@@ -1,0 +1,65 @@
+[
+  {
+    "our_games": [
+      {
+        "title": "Dreadtides",
+        "text_presentation": "Dreadtides is a strategy game set in a post-apocalyptic fantasy world. Explore a world lost to corruption, harness its resources, research lost technology, and protect your people. Can you build a city capable of defeating a magical cataclysm ?",
+        "video_link": "https://www.youtube.com/embed/5UntXcYjJeA",
+        "steam_link": "https://store.steampowered.com/app/1256510/Dreadtides/",
+        "background": "dreadtides_bg.png"
+      },
+      {
+        "title": "Adventurlnn",
+        "text_presentation": "Our next game is coming soon",
+        "video_link": "#",
+        "steam_link": "#",
+        "background": "new_game_incoming.png"
+      }
+    ],
+    "about_us": [
+      {
+        "name": "pierre",
+        "age": "25",
+        "spe": "dev",
+        "hob": "cooking",
+        "fav": "candy crush"
+      },
+      {
+        "name": "pierre",
+        "age": "25",
+        "spe": "dev",
+        "hob": "cooking",
+        "fav": "candy crush"
+      },
+      {
+        "name": "Alex",
+        "age": "30",
+        "spe": "leader",
+        "hob": "streaming",
+        "fav": "pokemon"
+      }
+    ],
+    "career": [
+      {
+        "name_of_job":  "Lead Web Designer",
+        "background": "dreadtides_bg.png",
+        "text_presentation_job": "Jelly beans danish cotton candy cotton candy. Bear claw danish chupa chups cake cookie cookie pie powder cheesecake. Donut sweet liquorice jelly beans marzipan pastry cotton candy dragée. Jelly-o jujubes tart pastry topping topping chocolate bar."
+      },
+      {
+        "name_of_job":  "Developer",
+        "background": "new_game_incoming.png",
+        "text_presentation_job": "Jelly beans danish cotton candy cotton candy. Bear claw danish chupa chups cake cookie cookie pie powder cheesecake. Donut sweet liquorice jelly beans marzipan pastry cotton candy dragée. Jelly-o jujubes tart pastry topping topping chocolate bar."
+      },
+      {
+        "name_of_job":  "3d Artist",
+        "background": "dreadtides_bg.png",
+        "text_presentation_job": "Jelly beans danish cotton candy cotton candy. Bear claw danish chupa chups cake cookie cookie pie powder cheesecake. Donut sweet liquorice jelly beans marzipan pastry cotton candy dragée. Jelly-o jujubes tart pastry topping topping chocolate bar."
+      },
+      {
+        "name_of_job":  "3d Artist",
+        "background": "dreadtides_bg.png",
+        "text_presentation_job": "Jelly beans danish cotton candy cotton candy. Bear claw danish chupa chups cake cookie cookie pie powder cheesecake. Donut sweet liquorice jelly beans marzipan pastry cotton candy dragée. Jelly-o jujubes tart pastry topping topping chocolate bar."
+      }
+    ]
+  }
+]

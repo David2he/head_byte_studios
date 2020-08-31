@@ -1,113 +1,227 @@
-const swup = new Swup({
-    plugins: [new SwupOverlayTheme({
-        color: '#df8d52',
-        duration: 350,
-        direction: 'to-bottom',
-    })]
-  });
+let svg_top_start = document.querySelector(".svg_container_top")
+let svg_bot_start = document.querySelector(".svg_container_bot")
+let svg_center_container_link = document.querySelector(".svg_center_container_link")
 
-// setInterval(test, 2800)
+let underline_behind_start_container = document.querySelector(".underline_behind_start_container")
+let hexa_center = document.querySelector(".hexa_center")
+let follow_the_read_section = document.querySelector(".follow_the_read_section")
+
+let $link_to_trigger_career_join_us = document.querySelectorAll('.link_to_trigger_career_join_us')
+let $career_join_us = document.querySelector('.career_join_us')
+let $close_career_join_us = document.querySelector('.close_career_join_us')
+
+// HAMBURGEUR MENUE SECTION 
+let toggle_menue_hamburgeur = document.querySelector(".toggle_menue_hamburgeur")
+let span_hamburgeur_menue_1 = document.querySelector(".span_hamburgeur_menue_1")
+let span_hamburgeur_menue_2 = document.querySelector(".span_hamburgeur_menue_2")
+let span_hamburgeur_menue_3 = document.querySelector(".span_hamburgeur_menue_3")
+let hamburgeur_menue_list = document.querySelector(".hamburgeur_menue_list")
+let link_to_scroll_in_hamburgeur = document.querySelectorAll(".link_to_scroll")
 
 
-
-
-function init_first_page() {
-    if(document.querySelector('.svg_bg') != null) {
-        let $svg = document.querySelector('.svg_bg')
-        let $all_path = $svg.querySelectorAll('.js_path_bg')
-        let testouille = 1
-        let random = Math.floor(Math.random(1)*($all_path.length/2))
-        test =()=>{
-            for(i = 0; i < 2; i++){
-                let random = Math.floor(Math.random(1)*($all_path.length/2))
-                $all_path[random].classList.toggle('orange_test')
-                // console.log('coucou')
-            }
-        }
-        delete_test =()=>{
-            for(i = 0; i < 2; i++){
-                let random = Math.floor(Math.random(1)*($all_path.length/2))
-                $all_path[random].classList.toggle('orange_test_remove')
-                // console.log('coucou')
-            }
-        }
-        delete_test()
-        test()
-        setInterval(test, 900)
-        setInterval(test, 1800)
-        setInterval(test, 2700)
-        setInterval(test, 3600)
-        
-        setInterval(delete_test, 900)
-        setInterval(delete_test, 1800)
-        setInterval(delete_test, 2700)
-        setInterval(delete_test, 3600)
-        // setInterval(test, 2800)
-    }
+for(i = 0; i < $link_to_trigger_career_join_us.length; i++){
+  $link_to_trigger_career_join_us[i].addEventListener('click',(event)=>{
+    event.preventDefault()
+    $career_join_us.classList.add('career_join_us_triggered')
+  })
 }
 
+$close_career_join_us.addEventListener('click',()=>{
+  $career_join_us.classList.remove('career_join_us_triggered')
+})
 
+toggle_menue_hamburgeur.addEventListener("click", (event) => {
+  event.preventDefault()
+  hamburgeur_menue_list.classList.toggle("take_place")
+  span_hamburgeur_menue_1.classList.toggle("HB_1_transition_active")
+  span_hamburgeur_menue_2.classList.toggle("HB_2_transition_active")
+  span_hamburgeur_menue_3.classList.toggle("HB_3_transition_active")
+  span_hamburgeur_menue_1.classList.toggle("HB_1_transition_unnactive")
+  span_hamburgeur_menue_2.classList.toggle("HB_2_transition_unnactive")
+  span_hamburgeur_menue_3.classList.toggle("HB_3_transition_unnactive")
+})
 
-
-
-
-
-function init() {
-    if(document.querySelector(".container_second_page") != null) {
-        const svg_test = document.querySelectorAll('.svg_test_canvas')
-        console.log(svg_test)
-
-//         imged = "./images/HBS.png" 
-//         const canvas = document.querySelector("canvas");
-//         const context = canvas.getContext("2d");
-
-//         let tryImg = document.createElement("img")
-// tryImg.src = "./images/HBS.png"
-// let sizeOfRadius = window.innerWidth / 4 // size of the radius which "drawn" image
-
-// window.addEventListener("resize",()=>{
-//     sizeOfRadius =  window.innerWidth / 4 // define again the size of radius to adapt it depending to the screen width 
-
-//   })
-
-
-
-// const mouse = {
-//   x: undefined,
-//   y: undefined
-// }
-
-// window.addEventListener("mousemove", (event)=>{
-//   mouse.x = event.clientX
-//   mouse.y = event.clientY
-// })
-
-// const loop = () =>{
-//     window.requestAnimationFrame(loop)
-//     context.globalAlpha = 0.2 // cool effect we saw in classes with you (tbh this is the same lol)
-//     context.fillStyle = '#fff' // color of the background
-//     context.fillRect(0, 0, canvas.width, canvas.height)
-    
-    
-//     context.beginPath() // start drawing ! 
-//     const pattern = context.createPattern(tryImg, "repeat"); 
-//     context.arc(mouse.x, mouse.y, sizeOfRadius, 0, Math.PI * 2) // create the circle which reveal the image
-//     context.globalAlpha = 1
-//     context.fillStyle = pattern // bacground became the image 
-//     context.fill()
-    
-
-    
-// }
-// loop()
-        
-    }
+for (i = 0; i < link_to_scroll_in_hamburgeur.length;i++) {
+  link_to_scroll_in_hamburgeur[i].addEventListener("click", () => {
+    hamburgeur_menue_list.classList.toggle("take_place")
+    span_hamburgeur_menue_1.classList.toggle("HB_1_transition_active")
+    span_hamburgeur_menue_2.classList.toggle("HB_2_transition_active")
+    span_hamburgeur_menue_3.classList.toggle("HB_3_transition_active")
+    span_hamburgeur_menue_1.classList.toggle("HB_1_transition_unnactive")
+    span_hamburgeur_menue_2.classList.toggle("HB_2_transition_unnactive")
+    span_hamburgeur_menue_3.classList.toggle("HB_3_transition_unnactive")
+  })
 }
 
+page_scroll_0 = () => {
+  document.body.classList.toggle("overflow_body")
+  // window.scrollTo(0, 0)
+}
 
-init_first_page();
-document.addEventListener('swup:contentReplaced', init_first_page);
+let window_height = window.innerHeight * 0.1
 
-init();
-document.addEventListener('swup:contentReplaced', init);
+// EACH CELLS AT THE BEGINNING
+window.addEventListener("mousemove", (event) => {
+  y_pos = event.clientY * 0.1
+  if (y_pos > window_height / 2) {
+    svg_bot_start.classList.add("testmother")
+    svg_top_start.classList.remove("testmother")
+  } else {
+    svg_top_start.classList.add("testmother")
+    svg_bot_start.classList.remove("testmother")
+  }
+})
+window.addEventListener("resize", () => {
+  window_height = window.innerHeight * 0.1
 
+})
+
+// START THE WEBSITE
+svg_center_container_link.addEventListener("click", () => {
+  svg_top_start.classList.toggle("go_up")
+  svg_bot_start.classList.toggle("go_down")
+  document.body.classList.add("overflow_body")
+  follow_the_read_section.classList.toggle("opacity_follow")
+  window.scrollTo(0, 0)
+  svg_center_container_link.style.transform = "translateX(100vw)"
+  svg_center_container_link.style.opacity= "0"
+  underline_behind_start_container.style.opacity= "0"
+
+})
+
+
+
+const $home_div_container = document.getElementById("home")
+const $our_games_div_container = document.getElementById("our_games")
+const $about_us_div_container = document.getElementById("about_us")
+const $career_div_container = document.getElementById("career")
+const $contact_div_container = document.getElementById("contact")
+const $q_and_a_div_container = document.getElementById("q_and_a")
+
+const $stick = document.querySelectorAll(".stick")
+
+const $stick_1 = document.querySelector(".stick_1")
+const $stick_2 = document.querySelector(".stick_2")
+const $stick_3 = document.querySelector(".stick_3")
+const $stick_4 = document.querySelector(".stick_4")
+const $stick_5 = document.querySelector(".stick_5")
+const $stick_6 = document.querySelector(".stick_6")
+
+const ratio = 0.7
+const option = {
+  root: null,
+  rootMargin: "0px",
+  threshold: ratio,
+}
+
+const handleIntersect_home = function (entries, observer) {
+  entries.forEach(function (entry) {
+    if (entry.intersectionRatio > ratio) {
+      $stick_1.style.opacity = 1
+    } else {
+      $stick_1.style.opacity = 0
+    }
+  })
+}
+
+const handleIntersect_our_games = function (entries, observer) {
+  entries.forEach(function (entry) {
+    if (entry.intersectionRatio > ratio) {
+      $stick_2.style.opacity = 1
+    } else {
+      $stick_2.style.opacity = 0
+    }
+  })
+}
+
+const handleIntersect_about_us = function (entries, observer) {
+  entries.forEach(function (entry) {
+    if (entry.intersectionRatio > ratio) {
+      $stick_3.style.opacity = 1
+    } else {
+      $stick_3.style.opacity = 0
+    }
+  })
+}
+
+const handleIntersect_carrer = function (entries, observer) {
+  entries.forEach(function (entry) {
+    if (entry.intersectionRatio > ratio) {
+      $stick_4.style.opacity = 1
+    } else {
+      $stick_4.style.opacity = 0
+    }
+  })
+}
+
+const handleIntersect_contact = function (entries, observer) {
+  entries.forEach(function (entry) {
+    if (entry.intersectionRatio > ratio) {
+      $stick_5.style.opacity = 1
+    } else {
+      $stick_5.style.opacity = 0
+    }
+  })
+}
+
+const handleIntersect_q_and_a = function (entries, observer) {
+  entries.forEach(function (entry) {
+    if (entry.intersectionRatio > ratio) {
+      $stick_6.style.opacity = 1
+    } else {
+      $stick_6.style.opacity = 0
+    }
+  })
+}
+
+const observer_home = new IntersectionObserver(handleIntersect_home, option)
+observer_home.observe($home_div_container)
+
+const observer_our_game = new IntersectionObserver(
+  handleIntersect_our_games,
+  option
+)
+observer_our_game.observe($our_games_div_container)
+
+// const observer_our_game = new IntersectionObserver(handleIntersect_our_games, option)
+// observer_our_game.observe($our_games_div_container)
+
+const observer_about_us = new IntersectionObserver(
+  handleIntersect_about_us,
+  option
+)
+observer_about_us.observe($about_us_div_container)
+
+const observer_carrer = new IntersectionObserver(
+  handleIntersect_carrer,
+  option
+)
+observer_carrer.observe($career_div_container)
+
+const observer_our_contact = new IntersectionObserver(
+  handleIntersect_contact,
+  option
+)
+observer_our_contact.observe($contact_div_container)
+
+const observer_q_and_a = new IntersectionObserver(
+  handleIntersect_q_and_a,
+  option
+)
+observer_q_and_a.observe($q_and_a_div_container)
+
+if (window.performance) {
+  // console.info("window.performance works fine on this browser")
+}
+console.info(performance.navigation.type)
+if (performance.navigation.type == performance.navigation.TYPE_RELOAD) {
+  // console.info( "This page is reloaded" )
+  page_scroll_0()
+  // svg_top.classList.add("go_up")
+  // svg_bot.classList.add("go_down")
+  // follow_the_read_section.classList.add('opacity_follow')
+  
+
+} else {
+  // console.info( "This page is not reloaded")
+}
